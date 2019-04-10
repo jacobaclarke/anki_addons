@@ -1,0 +1,101 @@
+/* All buttons at the bottom of the review screen
+   (including the "Edit" and "More" button) */
+
+button {
+    height: 20px;
+    font-size: 14px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin: 2px 6px 6px !important;
+}
+
+
+/* the "Show Answer" button */
+
+#ansbut {
+    width: 360px !important;
+    background-color: #455A64 !important;
+}
+
+
+/* All rating buttons */
+
+#middle button {
+    width: 96px;
+    color: white;
+}
+
+
+/* the "Good" button */
+
+#defease {
+    background-color: #4CAF50 !important;
+    border: 2px solid red;
+}
+
+
+/* the "Again" button */
+
+button[onclick*="ease1"]:not(#defease) {
+    background-color: #D32F2F !important;
+}
+
+
+/* the "Hard" button */
+
+button[onclick*="ease2"]:not(#defease) {
+    background-color: #455A64 !important;
+}
+
+
+/* the "Easy" button */
+
+button[onclick*="ease3"]:not(#defease),
+button[onclick*="ease4"]:not(#defease) {
+    background-color: #03A9F4 !important;
+}
+
+
+/* the "Edit" button */
+
+button[onclick*="edit"] {
+        background-color: #CF5A31;
+        color:white;
+        display: none;
+}
+
+
+
+/* the "More" button */
+
+button[onclick*="more"] {
+    background-color: #CF5A31;
+    color:white;
+    font-size: 9px;
+    /* background-color: #455A64 !important; */
+    width: 30px;
+
+
+
+}
+
+#outer {
+    background-color: red;
+}
+
+#innertable {
+    background-color: #2E2C2C;
+}
+
+font {
+    color:white;
+    font-size: 10px;
+}
+
+.nobold {
+    font-size: 9px;
+    color: white;
+}
