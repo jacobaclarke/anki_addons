@@ -10,6 +10,7 @@ from os import path
 from aqt.deckbrowser import DeckBrowser
 from anki.hooks import wrap
 from aqt.reviewer import Reviewer
+from aqt import Qt
 
 this_script_dir = path.dirname(__file__)
 user_css_path = path.join(this_script_dir, 'user_bottom_buttons.css')
@@ -26,6 +27,8 @@ def reviewer_ui(*args, **kwargs):
     mw.menuBar().hide()
     mw.toolbar.web.setFixedHeight(0)
     mw.reviewer.bottom.web.eval(js_append_css)
+    mw.setWindowFlags(Qt.Window | Qt.FramelessWindowHint);
+    mw.show()
     
 
 
@@ -34,6 +37,9 @@ def main_ui(*args, **kwargs):
     mw.menuBar().show()
     mw.toolbar.web.eval(js_append_css_toolbar.format('inline'))
     mw.toolbar.web.setFixedHeight(30)
+    mw.setWindowFlags(Qt.Window)
+    mw.show()
+
 
 
 
