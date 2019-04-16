@@ -13,16 +13,16 @@ Addons I have made for anki
 
 The progress bar is a fork of glutanimate's progress bar. It shows progress towards goal of number of cards seen in a day.
 
-## Instalation
+## Installation
 
 ### AnkiWeb
 
-Visit [ankiweb](https://ankiweb.net/shared/info/1590626921) to download the latest release of **Clean UI**
+Visit [ankiweb](https://ankiweb.net/shared/info/1590626921) to download the latest release of **Clean UI**.
 
 ### Compile
 
-Download the folder containing the desired plugin and put it in your anki addons folder as described [here](https://apps.ankiweb.net/docs/manual.html)
+Download the folder containing the desired plugin and put it in your anki addons folder as described [here](https://apps.ankiweb.net/docs/manual.html).
 
 ## Acknowledgments
 
-Big thanks to @glutanimate for the starting code behind **Progress Bar**
+Big thanks to @glutanimate for the starting code behind **Progress Bar**.
