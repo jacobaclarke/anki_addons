@@ -7,6 +7,11 @@ Addons I have made for anki
 ![preview](simplified_review_gui/screenshot.png)
 
 - removes some of the extra bars in reviewer mode.
+
+### Shortcuts
+
+- press I to toggle clean UI mode while on the reviewer
+- I also added jkl; shortcuts to keep from overriding right hand review shortcuts
   
 
 ## Progress Bar
