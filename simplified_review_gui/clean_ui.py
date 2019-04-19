@@ -22,6 +22,16 @@ with open(user_css_path, encoding='utf-8') as f:
 js_append_css_toolbar = "$('head').append(`<style>body {{ display: {};}}</style>`);"
 js_append_css = f"$('head').append(`<style>{bottom_buttons_css}</style>`);"
 
+
+
+
+def show_buttons():
+    mw.reviewer.bottom.web.show()
+
+
+def hide_buttons():
+    mw.reviewer.bottom.web.hide()
+
 def reviewer_ui(*args, **kwargs):
     mw.toolbar.web.eval(js_append_css_toolbar.format('none'))
     mw.menuBar().hide()
@@ -29,7 +39,10 @@ def reviewer_ui(*args, **kwargs):
     mw.reviewer.bottom.web.eval(js_append_css)
     mw.setWindowFlags(Qt.Window | Qt.FramelessWindowHint);
     mw.show()
-    
+
+
+
+
 def main_ui(*args, **kwargs):
     mw.menuBar().show()
     mw.toolbar.web.eval(js_append_css_toolbar.format('inline'))
@@ -59,6 +72,7 @@ class ToggleReviewer(Reviewer):
             reviewer_ui()
         else:
             main_ui()
+            show_buttons()
         self.toggled = not self.toggled
 
     def _shortcutKeys(self):
@@ -66,6 +80,8 @@ class ToggleReviewer(Reviewer):
         return self.toggle_shortcut
 
 
+addHook("showAnswer", show_buttons)
+addHook("showQuestion", hide_buttons)
 
 DeckBrowser._renderPage = wrap(DeckBrowser._renderPage, main_ui)
 Reviewer._initWeb = wrap(Reviewer._initWeb, reviewer_ui)
