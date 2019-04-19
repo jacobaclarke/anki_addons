@@ -4,7 +4,7 @@ Addons I have made for anki
 
 ## Clean UI
 
-![preview](simplified_review_gui/screenshot.png)
+![preview](simplified_review_gui/screenshot2.png)
 
 - removes some of the extra bars in reviewer mode.
 
