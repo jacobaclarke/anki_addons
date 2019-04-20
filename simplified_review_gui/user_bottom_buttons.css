@@ -82,20 +82,20 @@ button[onclick*="more"] {
 
 }
 
-#outer {
+/* #outer {
     background-color: red;
-}
+} */
 
 #innertable {
-    background-color: #2E2C2C;
+    /* background-color: #2E2C2C; */
 }
 
 font {
-    color:white;
+    /* color:white; */
     font-size: 10px;
 }
 
 .nobold {
     font-size: 9px;
-    color: white;
+    /* color: white; */
 }
